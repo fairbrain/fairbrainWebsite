@@ -28,3 +28,12 @@
 .navmenu__list li:last-child::after {
     @apply hidden;
 }
+
+.hero{
+    background: url("../images/background.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+.hero__content h1{
+    text-shadow: 0 0 8px rgba(253, 253, 253, 0.899);
+}

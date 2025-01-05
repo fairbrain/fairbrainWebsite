@@ -11,16 +11,16 @@
 
 <body class="font-poppins">
     <!-- HEADER SECTION -->
-    <header class="mx-auto py-2 px-4 bg-dark">
+    <header class="mx-auto py-2 px-4 bg-dark sticky top-0 z-50">
         <div class="container flex justify-between items-center">
             <div class="logo flex items-center">
                 <button type="button" class="text-2xl text-white" aria-label="Menu">
                     <i class="ri-menu-2-line" aria-hidden="true"></i>
                 </button>
-                <img src="./images/logo-landscape.png" alt="Fairbrain Logo" class="w-[250px]">
+                <img src="./images/logo-landscape.png" alt="Fairbrain Logo" class="w-[180px]">
             </div>
             <nav aria-label="Main Navigation" class="navmenu md:block hidden">
-                <ul class="flex items-center text-white gap-10 text-lg navmenu__list">
+                <ul class="flex items-center text-white gap-10 navmenu__list">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Gallery</a></li>
@@ -29,17 +29,42 @@
                     <li><a href="#">Contact Us</a></li>
                     <li class="bg-lightDark py-2 ps-2 pe-5 rounded-2xl text-sm active:scale-95">
                         <a href="#" aria-label="User Profile">
-                            <i class="ri-user-fill text-3xl p-1 rounded-full text-[#606667] bg-[#303839] align-middle me-2" aria-hidden="true"></i>Login
+                            <i class="ri-user-fill text-xl p-1 rounded-full text-[#606667] bg-[#303839] align-middle me-2"
+                                aria-hidden="true"></i>Login
                         </a>
                     </li>
                 </ul>
             </nav>
-            <button type="button" class="nav__toggler text-white text-2xl border border-[#303839] py-1 px-3 rounded-xl shadow-2xl inline-block shadow-[white] active:scale-95 md:hidden">
+            <button type="button"
+                class="nav__toggler text-white text-2xl border border-[#303839] py-1 px-3 rounded-xl shadow-2xl inline-block shadow-[white] active:scale-95 md:hidden">
                 <i class="ri-menu-fold-fill"></i>
             </button>
         </div>
     </header>
     <!-- HEADER SECTION -->
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero bg-dark text-white py-20  h-screen">
+            <div class="container h-full">
+                <div class="hero__content text-center h-full flex flex-col justify-center items-center">
+                    <h1 class="sm:text-5xl text-4xl font-bold">Your ‘ONE STOP’ Creative Source</h1>
+                    <p class=" md:text-lg mt-4 md:w-[60%] w-full px-2 font-light text-sm">Lorem ipsum dolor sit amet,
+                        consectetuer adipiscing elit, sed
+                        diam nonummy nibh
+                        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad </p>
+                    <div class="hero__search mt-8">
+                        <form action="#"
+                            class="bg-[#303839a1] text-white px-4 py-1 rounded-xl md:w-[600px] w-full flex items-center">
+                            <input type="text" placeholder="Type a word to find"
+                                class="bg-transparent text-white border-0 outline-0 w-full">
+                            <button type="submit" class="text-dark px-4 py-1 rounded-xl"><i
+                                    class="ri-search-2-line text-primary"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
