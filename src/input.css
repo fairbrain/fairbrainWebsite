@@ -5,35 +5,46 @@
 @tailwind utilities;
 
 .navmenu__list li {
-    @apply relative;
+  @apply relative;
 }
 
 .navmenu__list li:hover {
-    @apply scale-105 transition-all;
+  @apply scale-105 transition-all;
 }
 
 .navmenu__list li::after {
-    content: "";
-    @apply bg-[#ff5500] h-[3px] w-0 absolute bottom-[-10px] rounded-full left-1/2 -translate-x-1/2 transition-all duration-500;
+  content: '';
+  @apply bg-[#ff5500] h-[3px] w-0 absolute bottom-[-10px] rounded-full left-1/2 -translate-x-1/2 transition-all duration-500;
 }
 
 .navmenu__list li.active::after {
-    @apply block w-[120%];
+  @apply block w-[120%];
 }
 
 .navmenu__list li:hover::after {
-    @apply block w-full;
+  @apply block w-full;
 }
 
 .navmenu__list li:last-child::after {
-    @apply hidden;
+  @apply hidden;
 }
 
-.hero{
-    background: url("../images/background.jpg") no-repeat center center/cover;
+.hero {
+  background: url('../images/background.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+.hero__content h1 {
+  text-shadow: 0 0 8px rgba(253, 253, 253, 0.899);
+}
+
+.about-section{
+    background: linear-gradient(rgba(41, 41, 41, 0.955),rgba(23, 23, 23, 0.653)),url('../images/about-banner.jpg') no-repeat center center/cover;
     background-attachment: fixed;
+
 }
 
-.hero__content h1{
-    text-shadow: 0 0 8px rgba(253, 253, 253, 0.899);
+.about-section .stroke{
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
